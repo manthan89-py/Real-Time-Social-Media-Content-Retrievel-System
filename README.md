@@ -1,4 +1,4 @@
-# Real Time Social Media Content Retrieval System
+# 🎯 Real Time Social Media Content Retrieval System
 
 ## Project Description
 
@@ -20,6 +20,8 @@ Currently, the system only supports live LinkedIn posts retrieval. However, user
     }
 }
 ```
+## Demo
+![Demo Application](demo.png)
 
 ## Technologies Used
 
@@ -37,7 +39,7 @@ To run this project on your machine, follow these steps:
 1. **Create a virtual environment:**
 
 ```bash
-python -m venv venv
+python3 -m venv venv
 ```
 
 2. **Activate the environment:**
@@ -119,4 +121,9 @@ Developers are welcome to contribute to this project. Here's how:
 
 For any suggestions, comments, or inquiries, please contact `bhikadiyamanthan@gmail.com` or reach out via LinkedIn: `https://www.linkedin.com/in/manthanbhikadiya/`. Your inputs are highly appreciated and will contribute to making this project more beneficial for users.
 
+## Special Mentioned
+
+- Many thanks to **Paul Lusztin** for generously providing the code and an efficient pipeline for the Retrieval Data System. This project wouldn't have been possible without your contribution. I strongly encourage everyone to subscribe to the newsletter.
+- Github Repo: https://github.com/decodingml/articles-code/tree/main/articles/large_language_models/real_time_retrieval_system_for_social_media_data
+- Newsletter: https://decodingml.substack.com/
 

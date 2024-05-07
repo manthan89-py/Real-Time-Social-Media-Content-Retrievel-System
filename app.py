@@ -60,14 +60,6 @@ def migrate_data_to_vectordb(username):
 
 
 def get_insights_from_posts():
-    embedding_model = EmbeddingModelSingleton()
-    cross_encode_model = CrossEncoderModelSingleton()
-    qdrant_client = build_qdrant_client()
-    vectordb_retriever = QdrantVectorDBRetriever(
-        embedding_model=embedding_model,
-        cross_encoder_model=cross_encode_model,
-        vector_db_client=qdrant_client,
-    )
     with st.form("my_form"):
         query = st.text_area(
             "✨ Spark a Search:",
@@ -75,6 +67,14 @@ def get_insights_from_posts():
         )
         submitted = st.form_submit_button("Submit Query")
         if submitted:
+            embedding_model = EmbeddingModelSingleton()
+            cross_encode_model = CrossEncoderModelSingleton()
+            qdrant_client = build_qdrant_client()
+            vectordb_retriever = QdrantVectorDBRetriever(
+                embedding_model=embedding_model,
+                cross_encoder_model=cross_encode_model,
+                vector_db_client=qdrant_client,
+            )
             # st.toast("Query Seach is in Progress. Please wait...", icon="⏳")
             with  st.spinner("⏳Query Search is in Progress. Please wait..."):
                 retrieved_results = vectordb_retriever.search(
