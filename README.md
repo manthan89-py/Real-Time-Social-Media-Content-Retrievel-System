@@ -23,6 +23,8 @@ Currently, the system only supports live LinkedIn posts retrieval. However, user
 ## Demo
 ![Demo Application](demo.png)
 
+[Demo Video Link](https://youtu.be/6U0fQdQDXB4?si=eLLx0J55tN2rioiU)
+
 ## Technologies Used
 
 The project utilizes several technologies to create a streamlined pipeline:
@@ -31,6 +33,9 @@ The project utilizes several technologies to create a streamlined pipeline:
 * **Qdrant:** Serves as the vectordatabase, internally built using Rust for faster data processing.
 * **Pydantic:** Used for data validation and models.
 * **Streamlit:** Provides a simple user interface for the system, developed in Python.
+* **Selenium:** To create automation workflow using Python.
+* **BeautifulSoup:** Scrape the data from the HTML pages.
+
 
 ## Installation
 
